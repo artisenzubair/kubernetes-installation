@@ -1,0 +1,8 @@
+kubectl get pods
+kubectl get nodes
+kubectl delete <object-type> <object-name> ex: kubctl delete pod pod
+kubectl delete -f < file name > --> to delete the things whatever is created by that file 
+kubect label <object type> < object-name > key=value ex: kubectl label pod pod zub=pod
+kubectl get svc ---> to check the services which is running 
+kubectl get rc ----> to check the which all the replication controller is running 
+kubectl describe < object type > < object-name>  -----> which showes the behaviour of that object and gives more details 
