@@ -12,3 +12,5 @@ kubectl exec <pod-name> -c <container-name> -- hostname -i  ----> which shows ip
 kubectl exec <pod-name>  -it -c <container-name> -- /bin/bash
 kubectl rollout undo deploy <deployment-name> --to-revision=2 --- this will rellback to previous version of the deployment 
 kubectl scale --replicas=10 <object type> <object name> --- this will scale up and scale down the pods based on your requirement 
+kubectl rollout status deploy <deployment name>    -- show the status of the deployment 
+kubectl rollout history deploy <deployment name > -- show the history of the deployment 
