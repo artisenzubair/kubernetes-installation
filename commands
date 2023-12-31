@@ -6,4 +6,5 @@ kubect label <object type> < object-name > key=value ex: kubectl label pod pod z
 kubectl get svc ---> to check the services which is running 
 kubectl get rc ----> to check the which all the replication controller is running 
 kubectl describe < object type > < object-name>  -----> which showes the behaviour of that object and gives more details 
-kubectl logs -f pod
+kubectl logs -f pod -- for all containers 
+kubectl logs -f pod -c "containerID" --/bin/bash
