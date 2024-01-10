@@ -14,3 +14,4 @@ kubectl rollout undo deploy <deployment-name> --to-revision=2 --- this will rell
 kubectl scale --replicas=10 <object type> <object name> --- this will scale up and scale down the pods based on your requirement 
 kubectl rollout status deploy <deployment name>    -- show the status of the deployment 
 kubectl rollout history deploy <deployment name > -- show the history of the deployment 
+kubectl config set-context $(kubectl config current-context) --namespace=dev  -- to make the dev namespace as default insted of default ns 
