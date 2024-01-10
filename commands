@@ -15,3 +15,4 @@ kubectl scale --replicas=10 <object type> <object name> --- this will scale up a
 kubectl rollout status deploy <deployment name>    -- show the status of the deployment 
 kubectl rollout history deploy <deployment name > -- show the history of the deployment 
 kubectl config set-context $(kubectl config current-context) --namespace=dev  -- to make the dev namespace as default insted of default ns 
+kubectl get config view | grep namespace:
