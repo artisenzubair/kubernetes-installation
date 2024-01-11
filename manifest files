@@ -421,3 +421,31 @@ spec:
            name: bhupi
            command: ["/bin/bash", "-c", "echo Technical-Guftgu; sleep 5"]
          restartPolicy: Never
+=======================
+init container 
+
+
+
+
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: pod
+spec:
+  initContainers:
+    - name: ini
+      image: ubuntu
+      command: ["/bin/bash", "-c", "echo Hello zubair > /tmp/xchange/zubair; sleep 20"]
+      volumeMounts:
+        - name: xchange
+          mountPath: "/tmp/xchange"
+  containers:
+    - name: pod
+      image: ubuntu
+      command: ["/bin/bash", "-c", "echo zubair; sleep 1000"]
+      volumeMounts:
+        - name: xchange
+          mountPath: /tmp/data
+  volumes:
+    - name: xchange
+      emptyDir: {}
