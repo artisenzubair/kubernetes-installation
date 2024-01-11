@@ -18,3 +18,4 @@ kubectl config set-context $(kubectl config current-context) --namespace=dev  --
 kubectl config view | grep namespace:
 kuebctl autoscale deploy deploy --cpu-percen=50 --min=1 --max=20
 watch kubectl get all
+kubectl api-versions
