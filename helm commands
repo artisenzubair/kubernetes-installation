@@ -1,0 +1,9 @@
+helm repo 
+helm repo list
+helm repo add reponame url
+helm repo remove reponame
+helm search chartname
+helm show <values|chart| readme| all> <chartname>
+helm install <releasename> chartname
+helm install mychart stable/tomcat --wait --timeout 10s
+helm create chartname  ex. helm create hello-world 
