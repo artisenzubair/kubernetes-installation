@@ -7,3 +7,5 @@ helm show <values|chart| readme| all> <chartname>
 helm install <releasename> chartname
 helm install mychart stable/tomcat --wait --timeout 10s
 helm create chartname  ex. helm create hello-world 
+helm list --- shows which you have installed 
+helm delete name --- going to delete which you have installed 
