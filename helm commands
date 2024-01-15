@@ -12,3 +12,8 @@ helm delete name --- going to delete which you have installed
 helm install --dry-run test stable/tomcat --- going to show you the output without actully applied 
 helm get values chartname
 helm status chartname 
+helm install tomcatnew stable/tomcat -- set services.type
+helm history release name 
+helm delete release name
+helm upgrade relase name stable/tomcat
+helm rollback <release name> <revision>
