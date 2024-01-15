@@ -17,3 +17,7 @@ helm history release name
 helm delete release name
 helm upgrade relase name stable/tomcat
 helm rollback <release name> <revision>
+helm search repo bitnami/tomcat 
+helm pull stable/tomcat
+helm pull stable/tomcat --untar
+helm install chart .   --- if the chart is present in the local
