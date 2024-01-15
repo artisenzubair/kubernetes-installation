@@ -20,5 +20,5 @@ kuebctl autoscale deploy deploy --cpu-percen=50 --min=1 --max=20
 watch kubectl get all
 kubectl api-versions
 kubectl describe pod pod | grep -A 5 Conditions
-kubectl create configmap --from-file=abc.conf
+kubectl create configmap myconfig --from-file=abc.conf
 kubectl create secrets --from-file=abc.txt
