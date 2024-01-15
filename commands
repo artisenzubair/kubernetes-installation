@@ -21,4 +21,4 @@ watch kubectl get all
 kubectl api-versions
 kubectl describe pod pod | grep -A 5 Conditions
 kubectl create configmap myconfig --from-file=abc.conf
-kubectl create secrets --from-file=abc.txt
+kubectl create secret generic mysecrets --from-file=abc.txt
