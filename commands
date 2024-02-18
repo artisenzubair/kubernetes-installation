@@ -1,5 +1,6 @@
 kubectl get pods
 kubectl get nodes
+kubectl label node nodeIP node-role.kubernetes.io/worker1=
 kubectl token create --print-join-command --- if you want to create an token to make join the new node to the cluster 
 kubectl delete <object-type> <object-name> ex: kubctl delete pod pod
 kubectl delete -f < file name > --> to delete the things whatever is created by that file 
