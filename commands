@@ -1,6 +1,7 @@
 kubectl get pods
 kubectl get nodes
-kubectl taint node nodeIP node=NoSchedule
+kubectl taint node nodeIP node=NoSchedule --- if you want to taint the node 
+kubectl taint node nodeIP node- --- if you want to untaint the node use this command 
 kubectl label node nodeIP node-role.kubernetes.io/worker1=  ----- if you want to assign an role you use this command 
 kubectl label node nodeIP spec- ---- if you want to remove the label 
 kubectl token create --print-join-command --- if you want to create an token to make join the new node to the cluster 
