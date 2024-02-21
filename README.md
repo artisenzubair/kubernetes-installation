@@ -27,7 +27,6 @@ create worker nodes.
 
 ```
 sudo su
-cd
 kubeadm init
 ```
 >Note: Copy the command along with token generated and keep it in a separate file, we need to run this command on worker nodes
